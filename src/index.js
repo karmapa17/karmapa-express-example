@@ -8,6 +8,8 @@ import * as user from './user';
 const port = process.env.PORT || 3000;
 const app = express();
 
+app.locals.secret = 'YOU-CANT-SEE-ME';
+
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', home.getName, home.greet);
