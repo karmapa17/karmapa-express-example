@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import * as home from './home';
 import * as err from './err';
 import * as user from './user';
+import * as demo from './demo';
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -13,6 +14,8 @@ app.locals.secret = 'YOU-CANT-SEE-ME';
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', home.getName, home.greet);
+
+app.get('/demo', demo.staticDemo);
 
 app.get('/err', err.throwError);
 
