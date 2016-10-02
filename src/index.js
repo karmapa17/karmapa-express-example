@@ -13,6 +13,8 @@ app.locals.secret = 'YOU-CANT-SEE-ME';
 
 app.use(bodyParser.urlencoded({extended: false}));
 
+app.use(express.static('public'));
+
 app.get('/', home.getName, home.greet);
 
 app.get('/demo', demo.staticDemo);
