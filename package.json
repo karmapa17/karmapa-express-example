@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/karmapa17/karmapa-express-example#readme",
   "dependencies": {
-    "babel-register": "6.16.3"
+    "babel-register": "6.16.3",
+    "express": "4.14.0"
   }
 }
