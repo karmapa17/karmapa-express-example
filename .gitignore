@@ -3,4 +3,4 @@ npm-debug.log
 *.*.swp
 *.*.swo
 .DS_Store
-passwd
+passwd.txt
